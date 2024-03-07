@@ -1,11 +1,14 @@
 import React from 'react'
 import "../styles/components.css"
+import { Filters } from './Filters'
 
 
 export default function ProductsList({products}) {
   console.log(products)
   return (
-    <div className='products'>
+    <>
+    <Filters></Filters>
+      <div className='products'>
         <ul>
             {products.map(item=>(
                 <li key={item.id}>
@@ -21,6 +24,7 @@ export default function ProductsList({products}) {
    
 
     </div>
+    </>
     
   )
 }
