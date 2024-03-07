@@ -4,7 +4,6 @@ import { Filters } from './Filters'
 
 
 export default function ProductsList({products}) {
-  console.log(products)
   return (
     <>
     <Filters></Filters>
